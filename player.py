@@ -47,7 +47,7 @@ class Player:
         if self.check_wall(int(self.x), int(self.y + dy)):
             self.y += dy
 
-    def drew(self):
+    def draw(self):
         pg.draw.circle(self.game.screen, 'green', (self.x * 100, self.y * 100), 15)                        
 
     def update(self):
