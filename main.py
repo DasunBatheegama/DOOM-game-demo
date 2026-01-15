@@ -22,7 +22,7 @@ class Game:
 
     def update(self):
         self.player.update()
-        self.raycasting.ray_cast()
+        self.raycasting.update()
         pg.display.flip()
         self.delta_time = self.clock.tick(FPS)
         pg.display.set_caption(f'{self.clock.get_fps():.1f}')
